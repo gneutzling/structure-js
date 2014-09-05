@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BAN</title>
+	<style>
+		* {padding: 0; margin: 0;}
+		.popup {
+			position: absolute;
+			z-index: 200;
+			top: 20%;
+			left: 50%;
+			width: 500px;
+			margin-left: -250px;
+			background: #fff;
+		}
+		.popup__header {
+			position: relative;
+		}
+		.popup__close {
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			right: 0;
+			background: red;
+		}
+		.popup__content {
+			padding: 20px;
+		}
+		.overlock {
+			position: fixed;
+			z-index: 100;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background: #000;
+			opacity: 0.6;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Super BAN Popup Component</h1>
+
+	<a class="open-popup" href="javascript:;">open popup</a>
+
+	<div class="popup">
+		<div class="popup__header">
+			<h4>Popup title here</h4>
+			<a href="javascript:;" class="popup__close">Close</a>
+		</div>
+		<div class="popup__content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quam a, sequi expedita aliquid aperiam ea vero voluptate. Eligendi autem repellendus reiciendis quis, sunt quod voluptatum architecto aspernatur recusandae enim!</p>
+		</div>
+	</div>
+	<div class="overlock"></div>
+	
+
+
+	<script src="js/lib/js-inheritance.js"></script>
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/core/Alias.js"></script>
+	<script src="js/core/Component.js"></script>
+	<script src="js/core/Util.js"></script>
+	<script src="js/component/Popup.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
